@@ -1,0 +1,20 @@
+{
+  "source_device_rows": 19406,
+  "prepared_device_rows": 19404,
+  "company_year_rows": 50,
+  "companies": 10,
+  "years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "total_device_records": 4779852,
+  "unknown_label_source_rows": 22,
+  "unknown_label_device_records": 713,
+  "max_source_percentage_rounding_difference": 4.998800871047239e-05,
+  "all_company_year_totals_reconcile": true,
+  "year_coverage": "Year labels verified; extraction date, year basis, and full-year coverage unverified.",
+  "unit": "Device records; unique reports/events cannot be recovered from these summaries."
+}

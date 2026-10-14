@@ -1,0 +1,11 @@
+{
+  "device_source": "MAUDE_top10_EDA_device_type_summary_2021_2025-1.csv",
+  "company_source": "MAUDE_top10_company_year_summary_2021_2025 (1)(1).csv",
+  "narrative_source": "maude_narratives_sample (1).csv",
+  "outcome_source": {
+    "file": "Midterm_MAUDE_Data (1) (1).ipynb",
+    "cell_index_zero_based": 18,
+    "basis": "Saved complete HTML table output; original outcomes CSV not supplied"
+  },
+  "original_notebook_modified": false
+}

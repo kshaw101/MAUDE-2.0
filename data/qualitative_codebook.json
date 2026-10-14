@@ -1,0 +1,20 @@
+[
+  {
+    "column": "CARE_DISRUPTION_OR_ACTION",
+    "label": "Care disruption or corrective action",
+    "definition": "Explicit interruption, workaround, replacement/repair, stopping therapy, revision, readmission, or emergency intervention. Do not infer a response from malfunction alone.",
+    "count": 16
+  },
+  {
+    "column": "USE_OR_INFORMATION_CONTEXT",
+    "label": "Use, setup, or information gaps",
+    "definition": "Explicit operation/setup/positioning/instruction context or missing information/device availability relevant to investigation. Do not assign solely from the word use.",
+    "count": 8
+  },
+  {
+    "column": "EXPLICIT_NO_REPORTED_HARM",
+    "label": "Explicit absence of reported harm",
+    "definition": "Excerpt explicitly states no injury, discomfort, complications, symptoms, or adverse patient effects. This is a counterexample flag, not proof of safety.",
+    "count": 7
+  }
+]

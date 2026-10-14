@@ -1,0 +1,51 @@
+YEAR,ANALYSIS_COMPANY,DEVICE_RECORD_COUNT,PERCENT_OF_10_COMPANY_YEAR,SOURCE_URL
+2021,Abbott,170638,21.9103,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2021,BD,231095,29.6731,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2021,Baxter,14987,1.9244,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2021,Boston Scientific,51808,6.6523,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2021,Edwards Lifesciences,6387,0.8201,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2021,Intuitive Surgical,2093,0.2687,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2021,Johnson & Johnson MedTech,70889,9.1023,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2021,Medtronic,202294,25.975,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2021,Stryker,10867,1.3953,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2021,Zimmer Biomet,17745,2.2785,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2022,Abbott,129272,8.2259,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2022,BD,910153,57.9155,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2022,Baxter,15574,0.991,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2022,Boston Scientific,55142,3.5088,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2022,Edwards Lifesciences,7184,0.4571,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2022,Intuitive Surgical,6545,0.4165,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2022,Johnson & Johnson MedTech,68866,4.3821,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2022,Medtronic,353733,22.509,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2022,Stryker,9376,0.5966,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2022,Zimmer Biomet,15674,0.9974,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2023,Abbott,146004,17.2542,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2023,BD,192311,22.7266,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2023,Baxter,15941,1.8839,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2023,Boston Scientific,58823,6.9515,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2023,Edwards Lifesciences,8851,1.046,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2023,Intuitive Surgical,12235,1.4459,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2023,Johnson & Johnson MedTech,71061,8.3977,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2023,Medtronic,312727,36.957,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2023,Stryker,10219,1.2076,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2023,Zimmer Biomet,18020,2.1295,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2024,Abbott,134015,18.9834,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2024,BD,74655,10.575,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2024,Baxter,16390,2.3217,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2024,Boston Scientific,64829,9.1831,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2024,Edwards Lifesciences,9924,1.4057,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2024,Intuitive Surgical,13970,1.9789,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2024,Johnson & Johnson MedTech,74521,10.556,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2024,Medtronic,287717,40.7555,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2024,Stryker,10462,1.482,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2024,Zimmer Biomet,19475,2.7587,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2025,Abbott,133903,15.2617,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2025,BD,144306,16.4474,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2025,Baxter,14142,1.6118,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2025,Boston Scientific,73821,8.4138,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2025,Edwards Lifesciences,10485,1.195,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2025,Intuitive Surgical,50518,5.7578,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2025,Johnson & Johnson MedTech,69331,7.902,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2025,Medtronic,350366,39.9332,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2025,Stryker,10367,1.1816,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
+2025,Zimmer Biomet,20141,2.2956,https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files
