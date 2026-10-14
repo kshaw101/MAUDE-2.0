@@ -35,7 +35,9 @@ if (DASHBOARD_URL) {
     }
   } catch (e) { /* Keep the clear empty state if a valid HTTPS URL is not supplied. */ }
 }
-if (/^[A-Za-z0-9_-]{11}$/.test(YOUTUBE_VIDEO_ID)) {
+const video = document.getElementById("videoFrame");video.src = "https://drive.google.com/file/d/1-swEwmVrD2-p--Fi4yomP3PZL-_nD-sR/preview";
+video.classList.remove("hidden");
+document.getElementById("videoEmpty").classList.add("hidden");
   const f = document.getElementById("videoFrame");
   f.src = "https://www.youtube-nocookie.com/embed/" + YOUTUBE_VIDEO_ID;
   f.classList.remove("hidden"); document.getElementById("videoEmpty").classList.add("hidden");
