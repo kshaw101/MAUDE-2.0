@@ -17,13 +17,32 @@
 <section><p class="smallcaps">Conclusion</p><h2>Make reports easier to compare, while preserving their context</h2><p class="section-intro">The dataset supports a focused next step: test whether a clearer, structured reporting path helps providers communicate device problems with enough context for follow-up. It does not show that a particular company or device is less safe, nor whether companies respond faster.</p><div class="grid2"><article class="card"><h3>What I can conclude</h3><p>Reported-record volume is concentrated in a few company/category groups. Comparing within-company shares offers a more balanced view of category mix than comparing raw company totals alone.</p></article><article class="card"><h3>What remains uncertain</h3><p>These are not unique patient or event counts. The data lacks exposure denominators, verified date coverage, and a documented sampling method for narrative excerpts. Reporting volume cannot be used as a safety ranking.</p></article></div></section>
 <section id="test"><p class="smallcaps">Proposed future experiment · not run</p><h2>Would a guided form make useful reports easier to submit?</h2><p class="section-intro">The proposed change is a reporting path that helps providers identify a product/model and describe what happened, use context, and immediate care effects.</p><div class="grid2"><article class="card"><span class="tag">A · Baseline</span><h3>Current reporting route</h3><p>Participants use the existing product information and reporting/contact route.</p></article><article class="card"><span class="tag">B · Proposed change</span><h3>Guided reporting route</h3><p>Participants use a guided product catalog and structured prompts for device identity, event description, and care impact.</p></article></div><div class="card" style="margin-top:18px"><div class="step"><strong>Participants and assignment:</strong> Recruit provider teams from practices or hospitals using the participating company's devices; randomly assign sites to A or B and run both versions during the same period.</div><div class="step"><strong>Proposed primary measure:</strong> the share of providers who submit a report with the device/model, what happened, and care impact recorded during a standardized reporting task. Define the task window and success threshold before recruitment.</div><div class="step"><strong>Watch for harm:</strong> incomplete or inaccurate reports, duplicate reports, or reports that incorrectly attribute user error to a device could make the process worse even if more reports are submitted.</div><div class="step"><strong>Interpretation:</strong> more complete reporting would support further testing; it would not by itself prove faster company action or improved patient outcomes.</div></div><p class="note" style="margin-top:14px">This is a proposed usability experiment, not a result from the MAUDE dataset. Users with limited internet access or lower comfort with websites may be underrepresented.</p></section>
 <section id="dashboard"><p class="smallcaps">Interactive companion</p><h2>Explore company and device trends</h2><p class="section-intro">The dashboard lets visitors turn companies on or off, select device trends and years, and compare raw records with within-company shares.</p><div class="iframe-wrap"><div id="dashEmpty" class="embed-empty"><strong>Dashboard link not added yet</strong><p>After the Streamlit app is hosted, add its public URL to the configuration at the end of this HTML file. The interactive dashboard will appear here.</p></div><iframe id="dashFrame" title="Interactive MAUDE reporting dashboard" class="hidden" loading="lazy"></iframe></div><p><a id="dashOpen" class="button hidden" target="_blank" rel="noopener">Open dashboard in a new tab</a></p></section>
-<section id="walkthrough"><p class="smallcaps">Short recorded walkthrough</p><h2>See how to read the dashboard</h2><p class="section-intro">A short screen recording can introduce the question, explain the evidence and caveats, and demonstrate how company, device, and year selections work.</p><div id="videoEmpty" class="callout"><p><strong>Walkthrough link not added yet.</strong> Add the YouTube video ID in the configuration at the end of this HTML file after recording and uploading it.</p></div><iframe id="videoFrame" class="video-frame hidden" title="Project walkthrough video" loading="lazy" allowfullscreen></iframe></section>
+
+<section id="walkthrough">
+  <p class="smallcaps">Short recorded walkthrough</p>
+  <h2>See how to read the dashboard</h2>
+  <p class="section-intro">
+    Watch a short walkthrough of the MAUDE 2.0 dashboard.
+  </p>
+
+  <button id="playVideo" type="button">
+    Play walkthrough
+  </button>
+
+  <iframe
+    id="videoFrame"
+    class="video-frame hidden"
+    title="MAUDE 2.0 walkthrough"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+</section>
 <section><p class="smallcaps">Sources and method</p><h2>Data notes</h2><ul class="source-list"><li><a href="https://www.fda.gov/medical-devices/medical-device-reporting-mdr-how-report-medical-device-problems/mdr-data-files" target="_blank" rel="noopener">FDA MAUDE / MDR data files</a> — source referenced by the project notebook.</li><li>Unit shown in the charts: <strong>device records</strong>. These summaries cannot recover unique reports, people, or incidents.</li><li>Company and device charts use the ten-company CSV extracts supplied for the project; similar category labels are not automatically merged.</li><li>The normalized share is the category's portion of its company-year total, including unspecified category labels in the denominator. It is useful for comparing composition, but not exposure-adjusted.</li><li>The narrative summary uses 30 supplied excerpts and the notebook's keyword lists. Counts can overlap; manual review and a documented sample design would be needed for stronger qualitative claims.</li></ul><p class="note">This page is a portfolio summary of an exploratory student project. MAUDE reports are signals submitted to the FDA and should not be interpreted here as proof of causation or comparative device safety.</p></section>
 </main><footer class="footer">Kerri Shaw · DESIGNTK 530 · Fall 2026 · Exploratory analysis of FDA medical-device reporting records.</footer>
 <script>
 // Add the published Streamlit URL and YouTube video ID here when available.
-const DASHBOARD_URL = "https://kshawmidtermdashboard.streamlit.app/"; // Example: https://your-app.streamlit.app
-const YOUTUBE_VIDEO_ID = "https://drive.google.com/uc?id=1-swEwmVrD2-p--Fi4yomP3PZL-_nD-sR&export=download"; // Example: dQw4w9WgXcQ
+const DASHBOARD_URL = "https://kshawmidtermdashboard.streamlit.app/";
+
 if (DASHBOARD_URL) {
   try {
     const u = new URL(DASHBOARD_URL);
@@ -35,11 +54,19 @@ if (DASHBOARD_URL) {
     }
   } catch (e) { /* Keep the clear empty state if a valid HTTPS URL is not supplied. */ }
 }
-const video = document.getElementById("videoFrame");video.src = "https://drive.google.com/file/d/1-swEwmVrD2-p--Fi4yomP3PZL-_nD-sR/preview";
-video.classList.remove("hidden");
-document.getElementById("videoEmpty").classList.add("hidden");
-  const f = document.getElementById("videoFrame");
-  f.src = "https://www.youtube-nocookie.com/embed/" + YOUTUBE_VIDEO_ID;
-  f.classList.remove("hidden"); document.getElementById("videoEmpty").classList.add("hidden");
-}
+
+  // Load the Google Drive video when requested
+  const playButton = document.getElementById("playVideo");
+  const video = document.getElementById("videoFrame");
+
+  if (playButton && video) {
+    playButton.addEventListener("click", () => {
+      video.src =
+        "https://drive.google.com/file/d/1-swEwmVrD2-p--Fi4yomP3PZL-_nD-sR/preview";
+
+      video.classList.remove("hidden");
+      playButton.classList.add("hidden");
+    });
+  }
+
 </script></body></html>

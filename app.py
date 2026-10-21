@@ -173,6 +173,10 @@ st.subheader('Explore the original summaries')
 tab_devices,tab_companies,tab_outcomes,tab_narratives,tab_sensitivity,tab_project,tab_method = st.tabs(['Device categories','Companies','Outcome snapshot','Text findings','Sensitivity','Project conclusions','How to read this'])
 subset = data.loc[data.ANALYSIS_COMPANY.isin(active_companies) & data.YEAR.isin(years)]
 with tab_devices:
+
+    
+    st.subheader("1. Which types of medical devices are most frequently reported in MAUDE?")
+
     st.caption('Top ten device categories by raw device-record volume for the selected companies and years. The trend checkboxes do not filter this overview.')
     top = subset.groupby('GENERIC_DEVICE_TYPE',as_index=False).DEVICE_RECORD_COUNT.sum().nlargest(10,'DEVICE_RECORD_COUNT').sort_values('DEVICE_RECORD_COUNT')
     figure = px.bar(top,x='DEVICE_RECORD_COUNT',y='GENERIC_DEVICE_TYPE',orientation='h',color_discrete_sequence=['#007F78'],labels={'DEVICE_RECORD_COUNT':'Device records','GENERIC_DEVICE_TYPE':'Device category'})
@@ -182,13 +186,19 @@ with tab_devices:
         leading = top.iloc[-1]
         st.write(f"For the selected companies and years, {leading.GENERIC_DEVICE_TYPE} has the largest included count: {int(leading.DEVICE_RECORD_COUNT):,} device records. This identifies reporting concentration within the selection.")
 with tab_companies:
+    
+    st.subheader("2. Which manufacturers and device types account for the largest share of reported events?")
+
     st.caption('Total device records for selected years. This is reporting volume, not an industry or safety ranking.')
     ranked = filtered_totals.groupby('ANALYSIS_COMPANY',as_index=False).DEVICE_RECORD_COUNT.sum().sort_values('DEVICE_RECORD_COUNT')
     figure = px.bar(ranked,x='DEVICE_RECORD_COUNT',y='ANALYSIS_COMPANY',orientation='h',color='ANALYSIS_COMPANY',color_discrete_map=palette,labels={'DEVICE_RECORD_COUNT':'Device records','ANALYSIS_COMPANY':'Company'})
     figure.update_layout(showlegend=False,height=430)
     st.plotly_chart(figure,use_container_width=True)
 with tab_outcomes:
-    st.caption('Fixed 2021–2025 snapshot recovered from the saved table in notebook cell 18. Company, year, and device filters do not apply: this table has no breakdown by those fields. Counts are outcome entries, not unique patients or reports.')
+    
+    st.subheader("3. What patient outcomes are most frequently reported?")
+
+    st.caption('Fixed 2021–2025.company, year, and device filters do not apply: this table has no breakdown by those fields. Counts are outcome entries, not unique patients or reports.')
     outcomes = pd.read_csv(ROOT/'data/outcomes_notebook_snapshot.csv')
     figure = px.pie(outcomes,values='OUTCOME_ENTRY_COUNT',names='REPORTED_PATIENT_OUTCOME',hole=.5,
                     color_discrete_sequence=['#007F78','#657A8C','#D89A36','#C85B51','#7662A2','#427BA0','#B06D92'])
@@ -197,6 +207,9 @@ with tab_outcomes:
     st.plotly_chart(figure,use_container_width=True)
     st.dataframe(outcomes,hide_index=True,use_container_width=True)
 with tab_narratives:
+    
+    st.subheader("4. What themes emerge from the descriptions of reported events?")
+
     st.markdown('**What the text adds:** care disruption and use context help explain what a reporting form should capture. The proposed form should ask what happened, what staff did next, and which information is unavailable.')
     coding = pd.read_csv(ROOT/'data/narrative_coding.csv',dtype={'MDR_REPORT_KEY':str})
     coding_dates = pd.to_datetime(coding.DATE_REPORT,errors='coerce')
@@ -236,6 +249,9 @@ with tab_sensitivity:
     st.write('Using the five largest companies retains 92.7% of records and the same leading category. Excluding BD changes the leader from infusion pumps to the automated insulin-dosing category. Reporting concentration persists, but which device type leads depends on the companies included.')
 with tab_project:
     st.markdown('''
+    
+st.subheader("5. How might these findings inform better communication between patients, providers, and medical device companies?")
+
 **The project argument.** Providers and patients may benefit from an easier way to review device experiences and communicate problems to manufacturers. The proposed website would organize products and support feedback with device/model or lot information when available.
 
 **What the evidence supports.** The quantitative summaries show where the included device records concentrate and how each company's device mix changes over time. Narrative examples add care effects, workarounds, and information that may help an investigation. Those examples suggest useful reporting prompts; they do not establish whether manufacturers currently overlook reports.
