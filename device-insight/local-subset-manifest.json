@@ -1,0 +1,12 @@
+{
+  "source_files": [
+    "device2025.zip",
+    "foitext2025.zip"
+  ],
+  "join_key": "MDR_REPORT_KEY",
+  "report_count": 300,
+  "metadata_keys": 15000,
+  "narrative_rows_scanned": 38508,
+  "selection": "First up to 15000 device rows; first up to 100000 narrative rows; first eligible narrative per key; up to 300 joined reports.",
+  "limitations": "Convenience subset. Malformed/overlong physical rows skipped. Additional devices/narratives per key omitted. No master event type loaded. Local ZIP provenance unverified; not a representative sample."
+}

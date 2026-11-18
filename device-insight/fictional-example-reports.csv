@@ -1,0 +1,37 @@
+report_id,device,manufacturer,event_type,narrative,source
+DEMO-001,Demo Infusion Pump,Example Devices A,Demo malfunction,Battery power depleted during operation. The pump shut down and displayed a battery warning.,Fictional demo
+DEMO-002,Demo Infusion Pump,Example Devices A,Demo malfunction,Battery would not charge. A power connection fault interrupted the infusion pump.,Fictional demo
+DEMO-003,Demo Infusion Pump,Example Devices A,Demo malfunction,A fully charged battery lost power unexpectedly and the screen went dark.,Fictional demo
+DEMO-004,Demo Infusion Pump,Example Devices A,Demo malfunction,Power cable connection was loose. The battery alarm sounded before shutdown.,Fictional demo
+DEMO-005,Demo Infusion Pump,Example Devices A,Demo malfunction,The battery charging indicator stayed empty despite connection to mains power.,Fictional demo
+DEMO-006,Demo Infusion Pump,Example Devices A,Demo malfunction,Infusion pump battery overheated while charging. Power was disconnected by staff.,Fictional demo
+DEMO-007,Demo Infusion Pump,Example Devices A,Demo malfunction,Occlusion alarm sounded repeatedly although the tubing appeared unobstructed.,Fictional demo
+DEMO-008,Demo Infusion Pump,Example Devices A,Demo malfunction,The pump alarm failed to sound when the tubing became occluded.,Fictional demo
+DEMO-009,Demo Infusion Pump,Example Devices A,Demo malfunction,An intermittent occlusion warning interrupted delivery through the infusion tubing.,Fictional demo
+DEMO-010,Demo Infusion Pump,Example Devices A,Demo malfunction,A tubing connection leaked fluid near the pump. Staff noticed moisture.,Fictional demo
+DEMO-011,Demo Infusion Pump,Example Devices A,Demo malfunction,Fluid leaked at the tubing connector during infusion. Delivery was interrupted.,Fictional demo
+DEMO-012,Demo Infusion Pump,Example Devices A,Demo malfunction,"Infusion tubing separated at the connector, causing a visible fluid leak.",Fictional demo
+DEMO-013,Demo Glucose Monitor,Example Devices B,Demo malfunction,Sensor readings differed from a reference measurement. The display showed a low reading.,Fictional demo
+DEMO-014,Demo Glucose Monitor,Example Devices B,Demo malfunction,The glucose sensor returned inconsistent readings during repeated measurement.,Fictional demo
+DEMO-015,Demo Glucose Monitor,Example Devices B,Demo malfunction,A replacement sensor produced a reading different from the reference test.,Fictional demo
+DEMO-016,Demo Glucose Monitor,Example Devices B,Demo malfunction,Sensor readings fluctuated rapidly. A comparison measurement was documented.,Fictional demo
+DEMO-017,Demo Glucose Monitor,Example Devices B,Demo malfunction,The monitor showed a sensor error rather than a glucose reading.,Fictional demo
+DEMO-018,Demo Glucose Monitor,Example Devices B,Demo malfunction,An alert appeared after an inaccurate sensor reading was observed.,Fictional demo
+DEMO-019,Demo Glucose Monitor,Example Devices B,Demo malfunction,The adhesive detached and the sensor fell off during ordinary wear.,Fictional demo
+DEMO-020,Demo Glucose Monitor,Example Devices B,Demo malfunction,Skin irritation appeared beneath the sensor adhesive after application.,Fictional demo
+DEMO-021,Demo Glucose Monitor,Example Devices B,Demo malfunction,"Adhesive loosened at the edge, allowing the sensor to detach.",Fictional demo
+DEMO-022,Demo Glucose Monitor,Example Devices B,Demo malfunction,The sensor patch adhesive caused redness at the application site.,Fictional demo
+DEMO-023,Demo Glucose Monitor,Example Devices B,Demo malfunction,Bluetooth connection to the phone dropped. No readings synchronized.,Fictional demo
+DEMO-024,Demo Glucose Monitor,Example Devices B,Demo malfunction,Phone pairing repeatedly failed and the Bluetooth connection remained unavailable.,Fictional demo
+DEMO-025,Demo Cardiac Monitor,Example Devices C,Demo malfunction,Bluetooth connection to the monitoring tablet dropped during transmission.,Fictional demo
+DEMO-026,Demo Cardiac Monitor,Example Devices C,Demo malfunction,Wireless pairing failed. Recorded information did not synchronize to the tablet.,Fictional demo
+DEMO-027,Demo Cardiac Monitor,Example Devices C,Demo malfunction,The Bluetooth connection disconnected repeatedly during data transfer.,Fictional demo
+DEMO-028,Demo Cardiac Monitor,Example Devices C,Demo malfunction,The application lost connection and stopped displaying transmitted recordings.,Fictional demo
+DEMO-029,Demo Cardiac Monitor,Example Devices C,Demo malfunction,Electrode adhesive loosened and the electrode detached from the skin.,Fictional demo
+DEMO-030,Demo Cardiac Monitor,Example Devices C,Demo malfunction,Skin redness appeared beneath an adhesive electrode after monitoring.,Fictional demo
+DEMO-031,Demo Cardiac Monitor,Example Devices C,Demo malfunction,The electrode patch detached when its adhesive lost contact.,Fictional demo
+DEMO-032,Demo Cardiac Monitor,Example Devices C,Demo malfunction,An adhesive electrode caused localized skin irritation.,Fictional demo
+DEMO-033,Demo Cardiac Monitor,Example Devices C,Demo malfunction,Battery power dropped unexpectedly and the monitor shut down.,Fictional demo
+DEMO-034,Demo Cardiac Monitor,Example Devices C,Demo malfunction,The charging cable failed to restore battery power to the monitor.,Fictional demo
+DEMO-035,Demo Cardiac Monitor,Example Devices C,Demo malfunction,An alarm was inaudible when an electrode connection was lost.,Fictional demo
+DEMO-036,Demo Cardiac Monitor,Example Devices C,Demo malfunction,The warning alarm sounded repeatedly despite attached electrodes.,Fictional demo
